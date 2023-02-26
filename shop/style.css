@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@400;600;800;900&display=swap');
+
+:root{
+    --background:#abcdef;
+    --border:#003157;
+    --main-color: #19f145;
+}
+*{
+    font-family: 'Poppins', monospace;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    color: white;
+}
+body{
+    background: var(--background);
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    margin-top: 50px;
+}
+.bottom-navbar{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+header #logo{
+    display: flex;
+    position: relative;
+}
+header p{
+    margin-top: -25px;
+    margin-left: -5px;
+}
+header img{
+    width: 50px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container p{
+    font-size: larger;
+}
+.content{
+    padding: 20px;
+    width: 75%;
+}
+.content p{
+    text-align: center;
+}
+#product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+#right-navbar{
+    padding: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column; 
+}
+#right-navbar p{
+    text-align: center;
+}
+aside{
+   border: 1px solid white;
+   height: 100%;
+}
+/* FROM HERE PRODUCT DESIGN STARTED */
+.product-box{
+    width: 300px;
+    height: 360px;
+    border: 1px solid white;
+    position: relative;
+}
+.product-item{
+    width: 100%;
+    height: 360px;
+    /* border: 1px solid white; */
+    position: relative;
+}
+.product-item .remove{
+    width: 100%;
+}
+    .upside img{
+    width: 250px;
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+}
+.middleside{
+    color: white;
+    padding-top: 20px;
+    padding-left: 26px;
+    font-size: x-large;
+    font-weight: bold;
+}
+span{
+    display: block;
+    font-weight: 900;
+    font-size: 1.6em;
+    background: -webkit-linear-gradient(45deg, #00C9FF, #92FE9D 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+small{
+    font-size: 20px;
+}
+.downside {
+    width: 100%;
+    height: 53px;
+    background-color: darkcyan;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 53px;
+    font-weight: bold;
+}
+.remove {
+    width: fit-content;
+    height: 53px;
+    background-color: darkcyan;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 53px;
+    font-weight: bold;
+}
+/* AND HERE PRODUCT DESIGN ENDED */
+
+@media only screen and (max-width: 860px){
+    .navbar{
+        display: none;
+    }
+    #right-navbar{
+        display: none;
+    }
+    .bottom-navbar{
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+        background-color: var(--border);
+        justify-content: center;
+    }
+    .fa-icons{
+        font-size: 2rem;
+    }
+}
+.remove{
+    width: 190px;
+}
