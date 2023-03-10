@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Absolute Positioning</h2>
+  <p>Absolute positioning refers to positioning relative to the bounds of the <b>parent element</b>, out of the normal flow.</p>
+  <div class="float">
+      <div class="generalparent">
+          <div class="absolute"></div>
+      </div>
+      <div class="generalparent">
+              <div class="absolute1"></div>
+      </div>
+      <div class="generalparent">
+          <div class="absolute2"></div>
+      </div>
+      <div class="generalparent">
+          <div class="absolute3"></div>
+      </div>
+  </div>
+  <h2>Relative positioning</h2>
+  <p>A relatively positioned element is set relative to its original position on the page.</p>
+  <div class="generalparent">
+      <div class="relative"></div>
+      <div class="relative1"></div>
+  </div>
+  <h2>Fixed positioning</h2>
+  <p>This type of positioning is very similar to absolute positioning with one major difference: it locks the element on the page relative to the visible part of the browser's viewport and maintains that position during vertical scrolling. </p>
+  <div class="generalparent">
+      <div class="fixed">fixed</div>
+  </div>
+  <h2>Sticky positioning</h2>
+  <p>The last type we will consider is called sticky positioning. In terms of functionality, it is between fixed positioning and relative positioning: the element is positioned relatively until the page is scrolled to a certain point, after which the positioning will be fixed.</p>
+  <div class="generalparent">
+      <div class="sticky"></div>
+  </div>
+</body>
+</html>
