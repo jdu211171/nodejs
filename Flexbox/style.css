@@ -1,0 +1,9 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    width: 416px;
+    height: 32px;
+}
+.flex-item{
+    border: #00C9FF 2px solid;
+}
