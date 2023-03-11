@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.first-box {
+    width: 100px;
+    height: 200px;
+    background-color: aqua;
+    flex-grow: 1;
+}
+
+.second-box {
+    width: 100px;
+    height: 200px;
+    background-color: rebeccapurple;
+    flex-grow: 1;
+}
+
+.third-box {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+    flex-grow: 3;
+}
+
+.fourth-box {
+    width: 100px;
+    height: 200px;
+    background-color: yellow;
+    flex-grow: 2;
+}
